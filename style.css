@@ -1,0 +1,90 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.card {
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+div .card {
+  background-color: aqua;
+  border-radius: 25px;
+  background: #f5edd8;
+  padding: 20px;
+}
+.creative {
+  background-color: midnightblue;
+  border-radius: 100%;
+  color:azure ;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allows cards to wrap if there's not enough space */
+    gap: 20px; /* Adds space between cards */
+  }
+
+}
